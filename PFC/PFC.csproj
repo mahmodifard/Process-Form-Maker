@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1C5177F9-CB8C-4E31-BB2C-306CA54BED9C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PFC</RootNamespace>
+    <AssemblyName>PFC</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Atalasoft.DotTwain, Version=9.0.4.46327, Culture=neutral, PublicKeyToken=2b02b46f7326f73b, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Atalasoft\DotImage 6.0\Bin\2.0\x86\Atalasoft.DotTwain.dll</HintPath>
+    </Reference>
+    <Reference Include="Atalasoft.DotTwain.Controls, Version=9.0.4.46327, Culture=neutral, PublicKeyToken=2b02b46f7326f73b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Atalasoft\DotImage 9.0\bin\2.0\x86\Atalasoft.DotTwain.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="checkBox, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Txt\checkBox\bin\Debug\checkBox.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Design">
+      <HintPath>D:\program\c#\DotNetBar.v9500.cracked.by.prince\DevComponents.DotNetBar.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=8.1.0.8, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>H:\DotNetBar.v9500.cracked.by.prince\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="GComponents">
+      <HintPath>..\..\..\..\..\..\documents\visual studio 2010\Projects\GComponents\GComponents\bin\Debug\GComponents.dll</HintPath>
+    </Reference>
+    <Reference Include="GroupBoxs, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Txt\GroupBoxs\bin\Debug\GroupBoxs.dll</HintPath>
+    </Reference>
+    <Reference Include="mHLine, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Txt\mHLine\bin\Debug\mHLine.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="mLabels, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Txt\mLabels\bin\Debug\mLabels.dll</HintPath>
+    </Reference>
+    <Reference Include="MWArray, Version=2.10.0.0, Culture=neutral, PublicKeyToken=e1d84a0da19db86f, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\java\Desktop\MWArray.dll</HintPath>
+    </Reference>
+    <Reference Include="pictureBox, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Txt\pictureBox\bin\Debug\pictureBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Radio, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Txt\Radio\bin\Debug\Radio.dll</HintPath>
+    </Reference>
+    <Reference Include="SegmentPFC">
+      <HintPath>bin\SegmentPFC.dll</HintPath>
+    </Reference>
+    <Reference Include="SegmentPFCNative">
+      <HintPath>bin\SegmentPFCNative.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ThoughtWorks.QRCode">
+      <HintPath>..\..\..\..\..\..\Downloads\thoughtworks_qrcode_1.0.0_src\QRCode\QRCodeSampleApp\bin\Debug\ThoughtWorks.QRCode.dll</HintPath>
+    </Reference>
+    <Reference Include="TwainControl, Version=9.0.4072.24260, Culture=neutral, PublicKeyToken=1ef78ded7769a850, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Atalasoft\DotImage 9.0\bin\2.0\x86\TwainControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Txt, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Txt\Txt\bin\Debug\Txt.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionRecovery.cs" />
+    <Compile Include="Anasor.cs" />
+    <Compile Include="AppSettings.cs" />
+    <Compile Include="ControlFactory.cs" />
+    <Compile Include="ControlPrint.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CreateDataBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateDataBase.Designer.cs">
+      <DependentUpon>CreateDataBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Datalayer.cs" />
+    <Compile Include="DBPFCDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBPFCDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Do.cs" />
+    <Compile Include="FrmChooseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChooseForm.Designer.cs">
+      <DependentUpon>FrmChooseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmForProducer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmForProducer.Designer.cs">
+      <DependentUpon>FrmForProducer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmImageEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmImageEditor.Designer.cs">
+      <DependentUpon>FrmImageEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmImageProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmImageProcess.Designer.cs">
+      <DependentUpon>FrmImageProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLargerImages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLargerImages.Designer.cs">
+      <DependentUpon>FrmLargerImages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmScanner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmScanner.Designer.cs">
+      <DependentUpon>FrmScanner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmShowContent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShowContent.Designer.cs">
+      <DependentUpon>FrmShowContent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmShowPic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShowPic.Designer.cs">
+      <DependentUpon>FrmShowPic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GdiPlusLib.cs" />
+    <Compile Include="MainFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyArrayList.cs" />
+    <Compile Include="ObjectCopier.cs" />
+    <Compile Include="ObjectDictionary.cs" />
+    <Compile Include="ObjectInfo.cs" />
+    <Compile Include="PicForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RectTracker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ToolBox.cs" />
+    <Compile Include="TwainDefs.cs" />
+    <Compile Include="TwainLib.cs" />
+    <EmbeddedResource Include="CreateDataBase.resx">
+      <DependentUpon>CreateDataBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmChooseForm.resx">
+      <DependentUpon>FrmChooseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmForProducer.resx">
+      <DependentUpon>FrmForProducer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmImageEditor.resx">
+      <DependentUpon>FrmImageEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmImageProcess.resx">
+      <DependentUpon>FrmImageProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLargerImages.resx">
+      <DependentUpon>FrmLargerImages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmScanner.resx">
+      <DependentUpon>FrmScanner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShowContent.resx">
+      <DependentUpon>FrmShowContent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShowPic.resx">
+      <DependentUpon>FrmShowPic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFrame.resx">
+      <DependentUpon>MainFrame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PicForm.resx">
+      <DependentUpon>PicForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RectTracker.resx">
+      <DependentUpon>RectTracker.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="DBPFCDataSet.xsc">
+      <DependentUpon>DBPFCDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DBPFCDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBPFCDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBPFCDataSet.xss">
+      <DependentUpon>DBPFCDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1407.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1071.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1201.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12011.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\amor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iCandy_Junior 067.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kfouleggs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thunderbird.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clean.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\demo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlienAqua powerpoint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlienAqua scanner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlienAqua scanner 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Desert.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DBPFC.mdf" />
+    <Content Include="DBPFC_log.ldf">
+      <DependentUpon>DBPFC.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.10.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 Express</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
